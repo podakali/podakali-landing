@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0 2em;
+}
+
+a {
+  font-weight: bold;
+  color: #dddddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+#wrapper {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  max-width: 856px;
+}
+
+.logo {
+  width: 70%;
+  max-width: 10em;
+}
+
+p, .p {
+  margin: 0;
+  padding: 1em 0;
+  display: block !important;
+}
+
+h1, h2, h3 {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+small, .small {
+  font-size: 50%;
+}
+
+h3.p.small {
+  color: #cccccc;
+}
+
+.card-wrapper {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  font-size: 0.8em;
+  max-width: 10em;
+}
+
+.card-thumbnail {
+  padding-bottom: 0.5em;
+  overflow: hidden;
+}
+
+.card-thumbnail > img {
+  height: 90%;
+  max-width: 3em;
+  max-height: 3em;
+}
+
+.card-content {
+  padding-top: 0.5em;
+  font-weight: normal;
+}
+
+.shortline {
+  width: 15%;
+  border: none;
+  border-top: 1px solid #666666;
+  margin: 1em auto;
+}
+
+/* now some tweaking as screen size becomes bigger */
+@media (min-width: 320px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 425px) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 525px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 647px) {
+  body {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 750px) {
+  body {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 856px) {
+  body {
+    font-size: 2em;
+  }
+}
